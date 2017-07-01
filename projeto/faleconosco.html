@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- doctype do HTML5 -->
+<html lang="pt-BR">
+
+<head>
+    <title>bootstrap aula</title>
+
+    <!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Início da barra de navegação -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- botao utilizado para abrir menu em dispositivos resolucao menor -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          	</button>
+            <!-- logo do site -->
+            <a class="navbar-brand" href="index.html">NEEDLE<img class="img-responsive logo" src="images/Logo.png" alt="logo"></a>
+            <!-- inicio menu -->
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="empresa.html">A EMPRESA</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="servicos.html">SERVIÇOS</a></li>
+                    <li><a href="consultoria.html">CONSULTORIA</a></li>
+                    <li><a href="parcerias.html">PARCERIAS</a></li>
+                    <li class="active"><a href="faleconosco.html">FALE CONOSCO</a></li>
+                </ul>
+            </div>
+            <!-- fim menu -->
+        </div>
+    </div>
+    <!-- Fim da barra de navegação -->
+    <!-- Cria area principal de marketing de um site -->
+    <div class="jumbotron">
+        <div class="container">
+            <br />
+            <h1>FALE CONOSCO</h1>
+        </div>
+    </div>
+    <div class="container">
+        <!-- container -->
+        <!-- Criação de colunas -->
+        <div class="row">
+            <section class="col-xs-12 col-md-12 col-lg-12">
+                <p>
+                    Entre em contato conosco e juntos faremos bem melhor.
+                </p>
+                <form>
+                    <label>Nome</label>
+                    <input class="form-control" type="text" placeholder="nome" />
+                    <label>Sobrenome</label>
+                    <input class="form-control" type="text" placeholder="sobrenome" />
+                    <label>e-mail</label>
+                    <input class="form-control" type="text" placeholder="e-mail" />
+                    <label>Telefone</label>
+                    <input class="form-control" type="text" placeholder="(ddd) - xxxx-xxxx" />
+                    <label>Mensagem</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                    <div class="form-group">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+        <hr>
+        <footer>
+            <p>&copy; NEEDLE 2017</p>
+        </footer>
+    </div>
+    <!-- /container -->
+</body>
+
+</html>
